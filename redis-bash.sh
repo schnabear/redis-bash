@@ -2,6 +2,7 @@
 #
 # Simple Redis init.d script conceived to work on Linux systems
 # as it does use of the /proc filesystem.
+# Modified from https://github.com/antirez/redis/blob/unstable/utils/redis_init_script
 
 REDISPORT=6379
 EXEC=/usr/local/bin/redis-server
