@@ -60,6 +60,11 @@ case "$1" in
             echo "Redis stopped"
         fi
         ;;
+    halt)
+        echo "Forcing shutdown..."
+        $CLIEXEC -p $REDISPORT shutdown nosave
+        rm $PIDFILE
+        ;;
     cli)
         echo "Starting CLI, type exit to close..."
         redis-cli -p $REDISPORT
