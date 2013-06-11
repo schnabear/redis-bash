@@ -8,7 +8,7 @@ REDISPORT=6379
 EXEC=/usr/local/bin/redis-server
 CLIEXEC=/usr/local/bin/redis-cli
 
-PIDFILE=/var/run/redis_${REDISPORT}.pid
+PIDFILE="/var/run/redis_${REDISPORT}.pid"
 CONF="/etc/redis/${REDISPORT}.conf"
 LOG="/var/log/redis_${REDISPORT}.log"
 LOG_LEVEL=notice
