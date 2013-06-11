@@ -10,7 +10,7 @@ CLIEXEC=/usr/local/bin/redis-cli
 
 PIDFILE=/var/run/redis_${REDISPORT}.pid
 CONF="/etc/redis/${REDISPORT}.conf"
-LOG="/var/log/redis.log"
+LOG="/var/log/redis_${REDISPORT}.log"
 LOG_LEVEL=notice
 
 case "$1" in
